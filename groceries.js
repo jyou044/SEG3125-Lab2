@@ -3,39 +3,39 @@
 
 var products = [
 	{
-		name: "brocoli ($1.99)",
+		name: "Broccoli ($1.99)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99
 	},
 	{
-		name: "bread ($2.35)",
+		name: "Bread ($2.35)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35
 	},
 	{
-		name: "salmon ($10.00)",
+		name: "Salmon ($10.00)",
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
 	},
 	
 	{
-		name: "lettuce ($0.50)",
+		name: "Lettuce ($0.50)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 0.50
 	},
 	{
-		name: "spaghetti ($1.27)",
+		name: "Spaghetti ($1.27)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 1.27
 	},
 	
 	{
-		name: "milk ($4.49)",
+		name: "Milk ($4.49)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 4.49
