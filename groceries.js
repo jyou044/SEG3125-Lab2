@@ -101,7 +101,7 @@ function restrictListProducts(prods, restriction) {
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
 	counter = 0;
-	value = document.getElementById("organic")
+	value = document.getElementById("organic").value
 	for (let i=0; i<products.length; i+=1) {
 		if (chosenProducts.indexOf(products[i].name) > -1){
 			totalPrice += products[i].price;
