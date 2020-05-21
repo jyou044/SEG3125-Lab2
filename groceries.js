@@ -3,67 +3,67 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "brocoli ($1.99)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "bread ($2.35)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35
 	},
 	{
-		name: "salmon",
+		name: "salmon ($10.00)",
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
 	},
 	
 	{
-		name: "lettuce",
+		name: "lettuce ($0.50)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 0.50
 	},
 	{
-		name: "spaghetti",
+		name: "spaghetti ($1.27)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 1.27
 	},
 	
 	{
-		name: "milk",
+		name: "milk ($4.49)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 4.49
 	},
 	
 	{
-		name: "Jell-o",
+		name: "Jell-o ($1.77)",
 		vegetarian: false,
 		glutenFree: true,
 		price: 1.77
 	},
 	
 	{
-		name: "Orange Juice",
+		name: "Orange Juice ($5.97)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 5.97
 	},
 	
 	{
-		name: "Porridge",
+		name: "Porridge ($1.77)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 1.77
 	},
 	
 	{
-		name: "Strawberry Cheesecake",
+		name: "Strawberry Cheesecake ($6.50)",
 		vegetarian: false,
 		glutenFree: false,
 		price: 6.50
