@@ -23,10 +23,9 @@ JY'S MARVELOUS CORNER SUPERMARKET
 </div>
 
 <!-- Tab content -->
-<div id="Client" class="tabcontent">
+<div id="Client" class="tabcontent" style="display:block">
   <h3>Customer Preference</h3>
   <p>Please select your item preference(s).</p>
-	Choose a Category/Categories:
 	<select id="dietSelect" name="dietSelect" multiple onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value="Vegetarian">Vegetarian</option>
     	<option value="GlutenFree">GlutenFree</option>
@@ -34,7 +33,7 @@ JY'S MARVELOUS CORNER SUPERMARKET
 	</select>
 </div>
 
-<div id="Products" class="tabcontent">
+<div id="Products" class="tabcontent" style="display:none">
   <h3>Items Chosen For You: </h3>
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
@@ -44,7 +43,7 @@ JY'S MARVELOUS CORNER SUPERMARKET
 	</button>
 </div>
 
-<div id="Cart" class="tabcontent">
+<div id="Cart" class="tabcontent" style="display:none">
   <h3>Checkout</h3>
   <p>Here are your items:</p>
   <div id="displayCart"></div>
