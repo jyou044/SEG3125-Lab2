@@ -16,17 +16,17 @@ and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/S
       </center>
     </h1>
 	  
-    <!-- Tab links -->
+  <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Items')">Items</button>
-  <button class="tablinks" onclick="openInfo(event, 'Checkout')">Checkout</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Product Information</h3>
-  <p>Please select your Food Preference.</p>
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
 	Choose a Category:
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
@@ -36,25 +36,28 @@ and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/S
 	</select>
 </div>
 
-<div id="Items" class="tabcontent">
-   <h3>Items Selected Just For You!</h3>
-  <p>We have chosen products for you based on product preference.</p>
-	 Please select items:
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
 	</button>
 </div>
 
-<div id="Checkout" class="tabcontent">
-  <h3>Checkout</h3>
-  <p>Here are your selected items.</p>
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
 <footer>
     <p><i> Website Designed by: Jason You <br> Student #: 300056239 </i> </p>
   </footer>
-    <script src="groceries.js"></script>
-    <script src="main.js"></script>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+
   </body>
 </html>
