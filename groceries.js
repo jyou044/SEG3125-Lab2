@@ -3,42 +3,17 @@
 
 var products = [
 	{
-		name: "Broccoli ($1.99)",
-		vegetarian: true,
-		glutenFree: true,
-		price: 1.99
-	},
-	{
-		name: "Bread ($2.35)",
-		vegetarian: true,
-		glutenFree: false,
-		price: 2.35
-	},
-	{
-		name: "Salmon ($10.00)",
-		vegetarian: false,
-		glutenFree: true,
-		price: 10.00
-	},
-	
-	{
 		name: "Lettuce ($0.50)",
 		vegetarian: true,
 		glutenFree: true,
 		price: 0.50
 	},
+	
 	{
 		name: "Spaghetti ($1.27)",
 		vegetarian: true,
 		glutenFree: false,
 		price: 1.27
-	},
-	
-	{
-		name: "Milk ($4.49)",
-		vegetarian: true,
-		glutenFree: true,
-		price: 4.49
 	},
 	
 	{
@@ -49,13 +24,6 @@ var products = [
 	},
 	
 	{
-		name: "Orange Juice ($5.97)",
-		vegetarian: true,
-		glutenFree: true,
-		price: 5.97
-	},
-	
-	{
 		name: "Porridge ($1.77)",
 		vegetarian: true,
 		glutenFree: false,
@@ -63,10 +31,43 @@ var products = [
 	},
 	
 	{
+		name: "Broccoli ($1.99)",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "Bread ($2.35)",
+		vegetarian: true,
+		glutenFree: false,
+		price: 2.35
+	},	
+	{
+		name: "Milk ($4.49)",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.49
+	},
+	
+	{
+		name: "Orange Juice ($5.97)",
+		vegetarian: true,
+		glutenFree: true,
+		price: 5.97
+	},
+	
+	{
 		name: "Strawberry Cheesecake ($6.50)",
 		vegetarian: false,
 		glutenFree: false,
 		price: 6.50
+	},
+	
+	{
+		name: "Salmon ($10.00)",
+		vegetarian: false,
+		glutenFree: true,
+		price: 10.00
 	}
 	
 	
