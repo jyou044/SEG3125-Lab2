@@ -19,7 +19,57 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
+	},
+	
+	{
+		name: "lettuce",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.50
+	},
+	{
+		name: "spaghetti",
+		vegetarian: true,
+		glutenFree: false,
+		price: 1.27
+	},
+	
+	{
+		name: "milk",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.49
+	},
+	
+	{
+		name: "Jell-o",
+		vegetarian: false,
+		glutenFree: true,
+		price: 1.77
+	},
+	
+	{
+		name: "Orange Juice",
+		vegetarian: true,
+		glutenFree: true,
+		price: 5.97
+	},
+	
+	{
+		name: "Porridge",
+		vegetarian: true,
+		glutenFree: false,
+		price: 1.77
+	},
+	
+	{
+		name: "Strawberry Cheesecake",
+		vegetarian: false,
+		glutenFree: false,
+		price: 6.50
 	}
+	
+	
 ];
 	
 
