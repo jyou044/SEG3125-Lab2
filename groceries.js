@@ -100,10 +100,17 @@ function restrictListProducts(prods, restriction) {
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
+	counter = 0;
+	value = document.getElementById("organic")
 	for (let i=0; i<products.length; i+=1) {
 		if (chosenProducts.indexOf(products[i].name) > -1){
 			totalPrice += products[i].price;
+			counter++;
 		}
+	}
+	if(value == "yes")
+	{
+		totalPrice + (counter);
 	}
 	return totalPrice;
 }
