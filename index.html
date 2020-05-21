@@ -5,18 +5,14 @@ and https://www.w3schools.com/js/js_htmldom_document.asp
 and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery/index.html-->
 <!-- Tab links -->
 <html>
-  <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-	 <h1>
-      <center>
-        JY'S MARVELOUS CORNER SUPERMARKET
-      </center>
-    </h1>
-	  
-  <!-- Tab links, each one with an onclick event associated with it -->
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
@@ -51,13 +47,9 @@ and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/S
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
-<footer>
-    <p><i> Website Designed by: Jason You <br> Student #: 300056239 </i> </p>
-  </footer>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
 
-
-  </body>
+</body>
 </html>
