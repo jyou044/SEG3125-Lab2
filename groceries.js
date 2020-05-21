@@ -1,4 +1,4 @@
-/ Array of products, each product is an object with different fieldset
+// Array of products, each product is an object with different fieldset
 // A set of ingredients should be added to products		 
 
 var products = [
