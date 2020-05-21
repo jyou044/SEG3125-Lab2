@@ -25,8 +25,8 @@ and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/S
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Personal Information</h3>
-  <p>Tell us a bit about you.</p>
+  <h3>Product Information</h3>
+  <p>Please select your Food Preference.</p>
 	Choose a Category:
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
@@ -38,8 +38,8 @@ and https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/S
 
 <div id="Items" class="tabcontent">
    <h3>Items Selected Just For You!</h3>
-  <p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
+  <p>We have chosen products for you based on product preference.</p>
+	 Please select items:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
