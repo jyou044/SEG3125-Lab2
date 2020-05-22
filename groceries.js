@@ -1,6 +1,10 @@
-// Array of products, each product is an object with different fieldset
-// A set of ingredients should be added to products		 
-
+/*
+This is the JavaScript file that contains the array of products and calculations for the price of the items
+chosen by the user. This code has been inspired by the starter code provided by
+https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery/scripts/groceries.js
+*/
+		 
+// Product array containing items that the user can choose from 
 var products = [
 	{
 		name: "Lettuce ($0.50)",
@@ -156,10 +160,9 @@ var products = [
 ];
 	
 
-
-// given restrictions provided, make a reduced list of products
-// prices should be included in this list, as well as a sort based on price
-
+/*
+The restrictListProducts function. This function is responsible for filtering the products based on user needs. 
+*/
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
@@ -182,7 +185,10 @@ function restrictListProducts(prods, restriction) {
 	return product_names;
 }
 
-// Calculate the total price of items, with received parameter being a list of products
+/*
+The getTotalPrice function. This function is responsible for calculating the total price using an iteration 
+in a for loop. 
+*/
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;	
 	for (let i=0; i<products.length; i+=1) {
