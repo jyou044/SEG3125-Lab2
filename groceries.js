@@ -7,6 +7,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 0.50
 	},
 	
@@ -15,6 +16,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 1.27
 	},
 	
@@ -23,6 +25,7 @@ var products = [
 		vegetarian: false,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: false,
 		price: 1.77
 	},
 	
@@ -31,6 +34,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 1.77
 	},
 	
@@ -39,6 +43,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 1.99
 	},
 	{
@@ -46,6 +51,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 2.35
 	},	
 	{
@@ -53,6 +59,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: false,
 		price: 4.49
 	},
 	
@@ -61,6 +68,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 5.97
 	},
 	
@@ -69,6 +77,7 @@ var products = [
 		vegetarian: false,
 		organic: false,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 6.50
 	},
 	
@@ -77,6 +86,7 @@ var products = [
 		vegetarian: false,
 		organic: false,
 		glutenFree: true,
+		glutenFreeVeggie: false,
 		price: 10.00
 	},
 	
@@ -85,6 +95,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 1.50
 	},
 	
@@ -93,6 +104,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 2.27
 	},
 	
@@ -101,6 +113,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: false,
+		glutenFreeVeggie: false,
 		price: 2.77
 	},
 	
@@ -109,6 +122,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 2.99
 	},	
 	{
@@ -116,6 +130,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 5.49
 	},
 	
@@ -124,6 +139,7 @@ var products = [
 		vegetarian: true,
 		organic: true,
 		glutenFree: true,
+		glutenFreeVeggie: true,
 		price: 6.97
 	},
 	
@@ -132,6 +148,7 @@ var products = [
 		vegetarian: false,
 		organic: true,
 		glutenFree: true,
+		glutenFreeVeggie: false,
 		price: 11.00
 	}
 	
@@ -155,7 +172,7 @@ function restrictListProducts(prods, restriction) {
 		else if((restriction == "Organic") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true) && (prods[i].glutenFree == true)){
+		else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].glutenFreeVeggie == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
