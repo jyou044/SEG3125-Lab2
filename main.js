@@ -70,7 +70,6 @@ function selectedItems(){
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
 	var organic = document.getElementById('organic');
-	var price = getTotalPrice(chosenProducts);
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
 	
@@ -85,13 +84,8 @@ function selectedItems(){
 			chosenProducts.push(ele[i].value);
 		}
 	}
-	
-	if (organic === "yes")
-	{
-		price = price + chosenProducts.length;
-	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + price));
+	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 }
