@@ -5,6 +5,7 @@ var products = [
 	{
 		name: "Lettuce ($0.50)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: true,
 		price: 0.50
 	},
@@ -12,6 +13,7 @@ var products = [
 	{
 		name: "Spaghetti ($1.27)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: false,
 		price: 1.27
 	},
@@ -19,6 +21,7 @@ var products = [
 	{
 		name: "Jell-o ($1.77)",
 		vegetarian: false,
+		organic: false,
 		glutenFree: true,
 		price: 1.77
 	},
@@ -26,6 +29,7 @@ var products = [
 	{
 		name: "Porridge ($1.77)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: false,
 		price: 1.77
 	},
@@ -33,18 +37,21 @@ var products = [
 	{
 		name: "Broccoli ($1.99)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: true,
 		price: 1.99
 	},
 	{
 		name: "Bread ($2.35)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: false,
 		price: 2.35
 	},	
 	{
 		name: "Milk ($4.49)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: true,
 		price: 4.49
 	},
@@ -52,6 +59,7 @@ var products = [
 	{
 		name: "Orange Juice ($5.97)",
 		vegetarian: true,
+		organic: false,
 		glutenFree: true,
 		price: 5.97
 	},
@@ -59,6 +67,7 @@ var products = [
 	{
 		name: "Strawberry Cheesecake ($6.50)",
 		vegetarian: false,
+		organic: false,
 		glutenFree: false,
 		price: 6.50
 	},
@@ -66,8 +75,64 @@ var products = [
 	{
 		name: "Salmon ($10.00)",
 		vegetarian: false,
+		organic: false,
 		glutenFree: true,
 		price: 10.00
+	},
+	
+	{
+		name: "Organic Lettuce ($1.50)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: true,
+		price: 1.50
+	},
+	
+	{
+		name: "Organic Spaghetti ($2.27)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: false,
+		price: 2.27
+	},
+	
+	{
+		name: "Organic Porridge ($2.77)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: false,
+		price: 2.77
+	},
+	
+	{
+		name: "Organic Broccoli ($2.99)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: true,
+		price: 2.99
+	},	
+	{
+		name: "Organic Milk ($5.49)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: true,
+		price: 5.49
+	},
+	
+	{
+		name: "Organic Orange Juice ($6.97)",
+		vegetarian: true,
+		organic: true,
+		glutenFree: true,
+		price: 6.97
+	},
+	
+	{
+		name: "Organic Salmon ($11.00)",
+		vegetarian: false,
+		organic: true,
+		glutenFree: true,
+		price: 11.00
 	}
 	
 	
@@ -85,6 +150,9 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if((restriction == "Organic") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "GlutenFree") && (restriction == "Vegetarian") && (prods[i].vegetarian == true) && (prods[i].glutenFree == true)){
