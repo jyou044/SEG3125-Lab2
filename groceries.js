@@ -1,6 +1,6 @@
 // Array of products, each product is an object with different fieldset
 // A set of ingredients should be added to products		 
-
+var value = document.getElementById('organic').value;
 var products = [
 	{
 		name: "Lettuce ($0.50)",
@@ -98,10 +98,10 @@ function restrictListProducts(prods, restriction) {
 }
 
 // Calculate the total price of items, with received parameter being a list of products
-function getTotalPrice(chosenProducts) {
+function getTotalPrice(chosenProducts,organicVal) {
 	totalPrice = 0;
 	counter = 0;
-	value = document.getElementById("organic").value
+	
 	for (let i=0; i<products.length; i+=1) {
 		if (chosenProducts.indexOf(products[i].name) > -1){
 			totalPrice += products[i].price;
