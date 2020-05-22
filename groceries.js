@@ -59,7 +59,7 @@ var products = [
 		vegetarian: true,
 		organic: false,
 		glutenFree: true,
-		glutenFreeVeggie: false,
+		glutenFreeVeggie: true,
 		price: 4.49
 	},
 	
